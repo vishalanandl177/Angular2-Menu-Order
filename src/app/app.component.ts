@@ -38,12 +38,11 @@ export class AppComponent {
         } 
     }
     removeFromOrderList(id){
-      //alert(id);
       var exist =  this.orders.find(x => x.id == id);
       var myObject  = this.products.find(x => x.id == id);
       if(exist["count"] == 1){
         this.orders.splice(exist,1);
-        this.total -= exist["price"];
+        this.total -= myObject["price"];
       }else{
         var index = this.orders.indexOf(exist);
         var obj = {
@@ -54,6 +53,8 @@ export class AppComponent {
                 };
         this.orders[index] = obj;
         this.total -= myObject["price"];
+        console.log(obj);
+        console.log(this.total);        
       }
       
     }
