@@ -1,0 +1,24 @@
+li{
+    padding:10px;
+    text-decoration: none !important;
+    border: 1px solid gray;
+    margin: 10px;
+}
+.box>ul{
+    list-style: none;
+}
+li>div{
+    margin-left: 50px;
+    float: right;
+}
+ul{
+    width: 80%;
+}
+li>div>span{
+margin-right: 30px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
